@@ -1,0 +1,171 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Result</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f9f9f9;
+            }
+            
+            .container {
+                max-width: 800px;
+                margin: 20px auto;
+                padding: 20px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            
+            h1 {
+                color: #333;
+                margin-bottom: 20px;
+            }
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            
+            th, td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+            
+            th {
+                background-color: #f2f2f2;
+            }
+            
+            tr:nth-child(even) {
+                background-color: #f2f2f2;
+            }
+            
+            tr:hover {
+                background-color: #ddd;
+            }
+            
+            .filename, .grade, .feedback {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+<!--
+        <h1>Feedback Analysis</h1>
+    
+        <h2>Pie Chart</h2>
+        <img src="{{ pie_chart_url }}" alt="Pie Chart">   -->
+
+        <div class="container">
+            <h1>Grades for Uploaded Files</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Filename</th>
+                        <th>Grade</th>
+                        <th>Feedback</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for file_grade in file_grades %}
+                    <tr>
+                        <td><span class="filename">{{ file_grade.filename }}</span></td>
+                        <td><span class="grade">{{ file_grade.grade }}</span></td>
+                        <td><span class="feedback">{{ file_grade.Feedback }}</span></td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </body>
+    </html>
+    
+
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.filename {
+    font-weight: bold;
+}
+
+.grade {
+    font-style: italic;
+    color: #888;
+}
+
+.feedback {
+    color: #006400;
+}
+
+.feedback.fail {
+    color: #ff0000;
+}
+
+.feedback.can-do-better {
+    color: #ffa500;
+}
+
+.feedback.good {
+    color: #0000ff;
+}
+
+.feedback.excellent {
+    color: #008000;
+}
+
+       
+        
+    </style> 
+</head>
+<body>
+    <div class="container">
+    <h1>Grades for Uploaded Files</h1>
+    <ul>
+        {% for file_grade in file_grades %}
+        <li>Filename: {{ file_grade.filename }} - Grade: {{ file_grade.grade }} - Feedback: {{ file_grade.Feedback }}</li>
+        {% endfor %}
+    </ul>
+</div>
+-->
+</body>
+</html>

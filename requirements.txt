@@ -1,0 +1,3 @@
+flask
+textblob
+language_tool_python

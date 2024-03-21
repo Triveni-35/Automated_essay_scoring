@@ -1,0 +1,61 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.filename {
+    font-weight: bold;
+}
+
+.grade {
+    font-style: italic;
+    color: #888;
+}
+
+.feedback {
+    color: #006400;
+}
+
+.feedback.fail {
+    color: #ff0000;
+}
+
+.feedback.can-do-better {
+    color: #ffa500;
+}
+
+.feedback.good {
+    color: #0000ff;
+}
+
+.feedback.excellent {
+    color: #008000;
+}
