@@ -7,4 +7,5 @@ Those uploaded (can be multiple files at a time) files are processed using Flask
 Output is passed to result.html that prints in a tabular format.
 Output including filename, grade, feedback is appended to csv file
 
-just run python app.py to execute 
+just run python app.py to execute ![Screenshot_20240424-193642](https://github.com/Triveni-35/Automated_essay_scoring/assets/137861525/901d976b-007c-4148-ac9e-9c7aad697cb9)
+[Team Avinya.pptx](https://github.com/Triveni-35/Automated_essay_scoring/files/15095557/Team.Avinya.pptx)
